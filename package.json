@@ -4,7 +4,7 @@
   "description": "A Jasmine matcher for comparing objects containing floats with a tolerance",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine tests.js",
+    "test": "jasmine",
     "build": "tsc --outDir lib",
     "pretest": "npm run build"
   },
