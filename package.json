@@ -2,10 +2,10 @@
   "name": "jasmine-float-equals",
   "version": "1.0.0",
   "description": "A Jasmine matcher for comparing objects containing floats with a tolerance",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jasmine",
-    "build": "tsc --outDir lib",
+    "build": "tsc",
     "pretest": "npm run build"
   },
   "repository": {
