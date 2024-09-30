@@ -40,12 +40,10 @@ export function toEqualWithFloatToleranceMatcher(matchersUtil: jasmine.MatchersU
                 }
             };
             (matchersUtil as any).customTesters_.push(customTester);
-            var result = matchersUtil.equals(actual, expected);
+            let result = (jasmine as any).matchers.toEqual(matchersUtil).compare(actual, expected);
             (matchersUtil as any).customTesters_.splice((matchersUtil as any).customTesters_.indexOf(customTester), 1);
 
-            return {
-                pass: result
-            };
+            return result;
         }
     };
 }
