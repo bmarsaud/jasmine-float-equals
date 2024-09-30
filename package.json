@@ -3,6 +3,12 @@
   "version": "1.0.1",
   "description": "A Jasmine matcher for comparing objects containing floats with a tolerance",
   "main": "dist/index.js",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/equal-with-float-tolerance.js",
+    "dist/equal-with-float-tolerance.d.ts"
+  ],
   "scripts": {
     "test": "jasmine",
     "build": "tsc",
