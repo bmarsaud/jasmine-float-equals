@@ -1,6 +1,8 @@
 import {toEqualWithFloatToleranceMatcher} from "./equal-with-float-tolerance";
 
-var matchersUtil = new (jasmine as any).MatchersUtil();
+var matchersUtil = new (jasmine as any).MatchersUtil({
+    pp: (jasmine as any).basicPrettyPrinter_
+});
 
 describe('equalsWithFloatTolerance custom matcher', function () {
     it('should pass', function () {
